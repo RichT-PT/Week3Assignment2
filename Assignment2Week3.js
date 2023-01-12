@@ -19,6 +19,11 @@ for(let i =0; i < lettersInNames.length; i++){
 console.log(sumArray[sumArray.length - 1] / sumArray.length);
 //         2b. Use a loop to iterate through the array again and concatenate all the names together, separated by spaces. 
 
+let nakedList = " ";
+for(i = 0; i < names.length; i++){
+    nakedList += names[i] + " ";
+    
+}console.log(nakedList);
 
 //     3. How do you access the last element of any array?
 
