@@ -13,15 +13,15 @@ lettersInNames.push(names[i].length);//using [] around names[i].length did not p
 }console.log(lettersInNames);
 let sumArray = [];//made a new array to accept the sum of the elements of lettersInNames
 for(let i =0; i < lettersInNames.length; i++){
-    sum += lettersInNames[i];
-    sumArray.push (sum);
-}console.log(sumArray);
-console.log(sumArray[sumArray.length - 1] / sumArray.length);
+    sum += lettersInNames[i];//adds the elements together one at a time as it increments
+    sumArray.push (sum);//adds the sums to the new array
+}console.log(sumArray);//tested to see the new array of sums
+console.log(sumArray[sumArray.length - 1] / sumArray.length);// calculates the average
 //         2b. Use a loop to iterate through the array again and concatenate all the names together, separated by spaces. 
 
 let nakedList = " ";
 for(i = 0; i < names.length; i++){
-    nakedList += names[i] + " ";
+    nakedList += names[i] + " ";// added the " " to add spacing
     
 }console.log(nakedList);
 
