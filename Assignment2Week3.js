@@ -90,13 +90,36 @@ function echo(word, n){
     
 //}
 //     8. Write a function that takes two parameters, firstName and lastName, and returns a full name.
-//             ▪ The full name should be the first and the last name separated by a space.
+//             ▪ The full name should be t he first and the last name separated by a space.
+let N = fullName ("Rich", "Thompson");
+function fullName(firstName, lastName){
+     fullNamePrint = firstName + " " + lastName;
+    //return N;
+console.log(fullNamePrint);
+ } //console.log(firstName + " " + lastName);
+
 //let name = "";
-//let lastName = "";
+//let lastName = "";}
 
 //let fullName = ()
 
 //     9. Write a function that takes an array of numbers and returns true if the sum of all the numbers in the array is greater than 100.
+function numbers(array){
+    for()
+}
+var numberArray = [50, 60, 20];
+
+
+
+
+//     for(let i = 0; i < numberArray.length; i++){
+//         sum10 += numberArray.length[i];
+//         if(numberArray[numberArray.length - 1] > 100){
+//             console.log(true);
+//         }
+//     }
+
+// }
 
 //     10. Write a function that takes an array of numbers and returns the average of all the elements in the array.
 
