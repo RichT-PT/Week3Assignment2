@@ -74,20 +74,27 @@ console.log(sumOf[sumOf.length - 1]/ sumOf.length);
 //assignment. I need to set reminders of the proper array before each section of code for clarification
 //     7. Write a function that takes two parameters, word and n, as arguments and returns the word concatenated 
 // to itself n number of times. (i.e. if I pass in ‘Hello’ and 3, I would expect the function to return ‘HelloHelloHello’).
+
+let x = echo ("Hello", 3);
+
 function echo(word, n){
-    
+    let echobox = "";
+  //  console.log(word);
+    for(let i = 0; i < n; i++){
+        echobox += word + " ";
+
+    }console.log(echobox);
+  //  console.log(echo);
+
 }
     
-
-
-
-
-
-        
-
 //}
 //     8. Write a function that takes two parameters, firstName and lastName, and returns a full name.
 //             ▪ The full name should be the first and the last name separated by a space.
+//let name = "";
+//let lastName = "";
+
+//let fullName = ()
 
 //     9. Write a function that takes an array of numbers and returns true if the sum of all the numbers in the array is greater than 100.
 
