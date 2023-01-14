@@ -23,23 +23,69 @@ let nakedList = " ";
 for(i = 0; i < names.length; i++){
     nakedList += names[i] + " ";// added the " " to add spacing
     
-}console.log(nakedList);
+}//console.log(nakedList);
 
 //     3. How do you access the last element of any array?
+//I can access the last element in an array by calling on the length of the array, which
+//is always 1 more than the index because the index starts @ 0
+console.log(names[names.length - 1]);
+//call the array^ name[]for index, "names.length" calls the the total length of the array - 1 brings
+//it back to the last  element. the [] indicate you want an index equivalent to the length of the array 
+//minus one
+
 
 //     4. How do you access the first element of any array?
-
+// The first element of an array is always 0. use [] to tell js you want the index add 0. [0]
+console.log(names[0]);
+//don't forget ^^ to call the name of the array
 //     5. Create a new array called nameLengths. Write a loop to iterate over the previously created names array and add the length of each name to the nameLengths array.
 // For example:
 
 // namesArray = ["Kelly", "Sam", "Kate"] //given this array
 // nameLengths = [5, 3, 4] //create this new array
+let namesArray = ["Kelly", "Sam", "Kate"];
+let nameLengths = [];
+let letterCount = 0;
+//console.log(namesArray, "initial array value");
+ for(let i = 0; i < namesArray.length; i++){
+     letterCount = namesArray[i].length;
+  //   console.log(letterCount);//logs the letter count for each element as it should
+     nameLengths.push(letterCount);
 
+}
+//console.log(nameLengths);
+//had trouble with this code and used several console.log to figure it out. one note
+//in the future, watch adding 's' to the end of object names, there are easy to miss when calling them
+
+//console.log(namesArray);
 
 //     6. Write a loop to iterate over the nameLengths array and calculate the sum of all the elements in the array. 
+let sumOf = [];
+let sum2 = 0;
+for(let i =0; i < nameLengths.length; i++){
+    sum2 += nameLengths[i];
+    sumOf.push (sum2);
+  //  console.log(sum2);
 
-//     7. Write a function that takes two parameters, word and n, as arguments and returns the word concatenated to itself n number of times. (i.e. if I pass in ‘Hello’ and 3, I would expect the function to return ‘HelloHelloHello’).
+}//console.log(nameLengths[nameLengths.length - 1]);
+//console.log(sumOf);
+console.log(sumOf[sumOf.length - 1]/ sumOf.length);
+//I am still needing a lot of console.log's for some reason :D I struggled to call the correct array by the end of this 
+//assignment. I need to set reminders of the proper array before each section of code for clarification
+//     7. Write a function that takes two parameters, word and n, as arguments and returns the word concatenated 
+// to itself n number of times. (i.e. if I pass in ‘Hello’ and 3, I would expect the function to return ‘HelloHelloHello’).
+function echo(word, n){
+    
+}
+    
 
+
+
+
+
+        
+
+//}
 //     8. Write a function that takes two parameters, firstName and lastName, and returns a full name.
 //             ▪ The full name should be the first and the last name separated by a space.
 
